@@ -22,10 +22,10 @@ int main() {
     std::vector<std::string> number_strings;
     char num;
     
-    // to properly get cin to work in a loop
+    // to properly get cin to work
     std::cin >> std::noskipws;
     
-    // grab a character until new line not met
+    // grab a character until grab failure or new line met
     while(std::cin >> num && num != '\n') {
         // move into bounds of 0 to 9
         num = num - '0';
